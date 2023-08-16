@@ -56,11 +56,9 @@ const fetchDistributorList = () => async (dispatch) => {
 
 export const setDistributorActions =
   (values, event, history) => async (dispatch) => {
-    const distributorId = parseInt(values.id, 10);
     event.preventDefault();
     try {
       let insert = {
-        id: distributorId,
         distributor_Name: values.distributor_Name,
         city: values.city,
         state: values.state,
@@ -118,10 +116,9 @@ export const setUpdateDistributorAction =
 export const setUploadActions =
   (values, event, history) => async (dispatch) => {
     event.preventDefault();
-    const uploadId = parseInt(values.id, 10);
+
     try {
       let insert = {
-        id: uploadId,
         title: values.title,
         document_file: values.document_file,
         author: values.author,

@@ -27,7 +27,6 @@ const Upload = () => {
   const history = useHistory();
 
   const [upload, setUpload] = useState({
-    id: 0,
     title: "",
     document_file: null,
     author: "",

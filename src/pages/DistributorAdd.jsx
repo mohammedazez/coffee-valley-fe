@@ -27,7 +27,6 @@ const DistributorAdd = () => {
   const history = useHistory();
 
   const [register, setRegister] = useState({
-    id: Math.floor(Math.random() * 10000),
     distributor_Name: "",
     city: "",
     state: "",
