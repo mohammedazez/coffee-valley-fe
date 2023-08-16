@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const Axios = axios.create({
-  baseURL: "http://localhost:8080/",
+  baseURL: "https://coffee-valley-24a12ad7647c.herokuapp.com/",
 });
 
 // Add a request interceptor
